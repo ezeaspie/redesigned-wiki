@@ -1,2 +1,2 @@
 # redesigned-wiki
-A small personal project wiki
+A small wiki for my "Harbour" series.
