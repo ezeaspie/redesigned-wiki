@@ -1,5 +1,11 @@
 *{
   margin:0;
+  padding:0;
+  color:#2d2d2d;
+}
+
+body{
+  margin:0 1.5em;
 }
 
 #container {
@@ -19,6 +25,7 @@ aside{
   background:#d3d3d3;
   min-width:300px;
   max-width: 320px;
+  margin:auto;
 }
 
 .header {
@@ -61,4 +68,106 @@ section span {
   display:inline-block;
   width:60%;
 
+}
+
+#mainImg {
+  max-width:280px;
+  margin: 0 auto;
+}
+
+#firstAside {
+  margin-top: 0;
+}
+
+blockquote {
+  font-size:1.5em;
+  font-style:italic;
+  font-family:Cambria;
+  margin: 1em 0;
+}
+
+blockquote span {
+  font-variant: small-caps;
+  font-size:.75em;
+  display:inline-block;
+}
+
+.textHeader {
+  color:#2d2d2d;
+  border-bottom: solid 1px;
+  margin:.5em 0;
+  width:50%;
+}
+
+a {
+  color: #5bbf42;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#2e731c;
+}
+
+
+.history div {
+  margin:1em 0;
+}
+
+.footer {
+  border-radius:10px 10px 0 0;
+}
+
+#first {
+  border-radius: 10px 0 0 0;
+  background:#5bbf42;
+  text-align:center;
+  color:#d1d1d1;
+}
+#second {
+  border-radius: 0 10px 0 0;
+  background:#5bbf42;
+  padding:1em;
+}
+
+td{
+  padding:.3em.5em;
+}
+
+.footer{
+  margin:0;
+  padding:0;
+  background:#5bbf42;
+}
+
+.footer a {
+  color:#2e731c;
+}
+.footer a:hover {
+  color:#5bbf42;
+}
+.footer tr {
+  background:#d3d3d3;
+}
+
+.footerLabel {
+  font-weight:bold;
+  text-align:center;
+  padding: 0 .5em;
+}
+
+@media screen and (min-width: 760px){
+  #container{
+    display:block;
+    margin:0 auto;
+  }
+  aside{
+    margin:1em;
+    float:right;
+  }
+}
+
+@media screen and (min-width:1000px){
+  #container{
+    max-width:1080px;
+  }
 }

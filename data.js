@@ -8,9 +8,9 @@ const convertArray = (array) => {
   return HTML;
 };
 
-const characterFactory = (basic,biographical,social,appearances) => {
+const characterFactory = (basic,biographical,social,appearances,imageURL) => {
 
-  return {basic,biographical,social,appearances}
+  return {basic,biographical,social,appearances,imageURL}
 };
 
 const basicFactory = (name,status,gender,birthplace,occupation, hairColor, eyeColor, aliases, affiliations) => {
@@ -34,5 +34,5 @@ const MaddieBio = biographicalFactory("Northern Serenity (Isle of Tranqulity)","
 const MaddieSocial = socialFactory(["Juliette Sandover","Julian Gaitan","Jade Vernon","James Vernon","Ada Lima","Estefania Lima","Katie Ryan","Nancy Petrov"], ["Maxine Rubin","Selena Rasoca","Alfonso Lima","Alexander Sage","Alexandra Sage","Alexis Sage","Alex-Sandro Sage"]);
 const MaddieAppearsIn = appearancesFactory(["The Ring of Deceit","The Heroic Villainess", "The Fate of Serenity"]);
 
-const Maddie = characterFactory(MaddieBasic,MaddieBio,MaddieSocial,MaddieAppearsIn);
+const Maddie = characterFactory(MaddieBasic,MaddieBio,MaddieSocial,MaddieAppearsIn, "./img/madeline.jpg");
 characters.push(Maddie);
