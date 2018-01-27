@@ -4,8 +4,19 @@
   color:#2d2d2d;
 }
 
+html{
+  background: url('../img/default/background.png');
+}
+
+h1{
+  font-size:2em;
+  border-bottom:solid 1px;
+  width:95%;
+  padding: 0 .5em;
+  text-align:center;
+}
 body{
-  margin:0 1.5em;
+  margin: 0;
 }
 
 #container {
@@ -13,6 +24,14 @@ body{
   flex-direction:column;
   max-width:785px;
   font-family:Calibri;
+  background:#f7f7f7;
+  padding:1em;
+}
+
+#container p {
+  padding: .5em 0;
+  line-height:1.5em;
+  font-size:1.1em;
 }
 
 .bold {
@@ -99,7 +118,8 @@ blockquote span {
   width:50%;
 }
 
-a {
+a ,
+a em{
   color: #5bbf42;
   text-decoration:none;
 }
@@ -155,19 +175,28 @@ td{
   padding: 0 .5em;
 }
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 560px){
   #container{
+    min-width:785px;
     display:block;
     margin:0 auto;
+    padding: 0 1.5em;
+  }
+  h1{
+    padding:0;
+    text-align:initial;
   }
   aside{
     margin:1em;
     float:right;
   }
+  .history p {
+    margin-left:.5em;
+  }
 }
 
 @media screen and (min-width:1000px){
   #container{
-    max-width:1080px;
+    max-width:900px;
   }
 }

@@ -107,5 +107,3 @@ const renderTitle = (obj) => {
 renderAside(currentObject);
 renderFooter();
 renderTitle(currentObject);
-
-document.querySelector(".navigation").style.display = "none";
